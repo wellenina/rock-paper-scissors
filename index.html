@@ -10,43 +10,74 @@
     
     <header>
         <h1>Rock Paper Scissors Lizard Spock</h1>
-        <a href="#">How to play</a> <!-- add link -->
+        <a href="#"> <!-- ADD ACTUAL LINK or something -->
+            <img src="images/info.png" alt="info icon">
+            <p>How to play</p>
+        </a>
         <h2>Best out of five wins!</h2>
     </header>
 
-    <section class="play">
-        <h3>Choose:</h3>
-        <!-- add icons -->
-        <ul>
-            <li>Rock</li>
-            <li>Paper</li>
-            <li>Scissors</li>
-            <li>Lizard</li>
-            <li>Spock</li>
-        </ul>
-    </section>
-
-    <section class="score">
-        <div class="player">
-            <p>Player</p>
-            <p id="player-score">0</p>
-            <!-- PLAYER ICON -->
-            <!-- PLAYER's choice ICON -->
-        </div>
-        <div class="computer">
+    <section class="computer-section">
+        <div class="score">
+            <p>Score</p>
             <p id="computer-score">0</p>
-            <p>Computer</p>
-            <!-- COMPUTER's choice ICON -->
-            <!-- COMPUTER ICON -->
+        </div>
+
+        <div class="opponent">
+            <h3>Your Opponent</h3>
+            <img src="images/sheldon-cooper.png" alt="Your opponent, Sheldon Cooper">
+        </div>
+
+        <div class="computer hand-container">
+            <span class="computer-choice-icon"></span> <!-- computer choice -->
+            <span class="computer hand-icon">&#x270A;</span> <!-- closed fist icon -->
         </div>
     </section>
 
-    <section class="result">
-        <h3 id="result"></h3>
+    <section class="player-section">
+        <div class="score">
+            <p>Your score</p>
+            <p id="player-score">0</p>
+        </div>
+
+        <div class="player hand-container">
+            <span class="player-choice-icon"></span> <!-- player choice -->
+            <span class="player hand-icon">&#x270A;</span> <!-- closed fist icon -->
+        </div>
+
+        <div class="choose">
+            <h3>Choose:</h3>
+                <ul class="options">
+                    <li id='rock'>
+                        <h4>&#x270A;</h4>
+                        <p>Rock</p>
+                    </li>
+                    
+                    <li id='paper'>
+                        <h4>&#x270B;</h4>
+                        <p>Paper</p>
+                    </li>
+                    
+                    <li id='scissors'>
+                        <h4>&#x270C;</h4>
+                        <p>Scissors</p>
+                    </li>
+                    
+                    <li id='lizard'>
+                        <h4>&#x1F90F;</h4>
+                        <p>Lizard</p>
+                    </li>
+                    
+                    <li id='spock'>
+                        <h4>&#x1F596;</h4>
+                        <p>Spock</p>
+                    </li>
+                </ul>
+        </div>
     </section>
 
     <footer>
-        <!-- add content -->
+        <!-- ADD CONTENT -->
     </footer>
 </body>
 </html>

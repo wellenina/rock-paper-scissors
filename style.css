@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+    background-color: #88d8b0;
+}
+
+
+/* header */
+
+header {
+    background-color: #ffcc5c;
+    padding: 1rem 0;
+    font-size: larger;
+}
+
+header a {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+header img {
+    max-width: 30px;
+}
+
+header p {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* computer/opponent section */
+
+.computer-section {
+    border-bottom: 5px solid darkslategrey;
+}
+
+.computer-section .score {
+    position: absolute;
+    left: 3rem;
+    bottom: 6rem;
+}
+
+.computer-section img {
+    max-height: 300px;
+}
+
+
+/* player section */
+
+.player-section {
+    border-top: 5px solid darkslategrey;
+}
+
+.player-section .score {
+    position: absolute;
+    left: 3rem;
+}
+
+.choose .options {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.choose .options li {
+    cursor: pointer;
+}
+
+.choose .options h4 { /* hand icons */
+    width: 70px;
+    height: 70px;
+    background-color: #ff6f69;
+    border-radius: 50%;
+    margin: 0;
+    border: 7px solid darkslategrey;
+    padding: 1.5rem;
+    display: inline-block;
+    font-size: 4rem;
+}
+
+.choose .options h4.chosen { /* looks ugly but for now will do */
+    box-shadow: 0 0 100px gold, 0 0 20px lightgoldenrodyellow;
+}
+
+.choose.disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+
+/* hand icons */
+
+.hand-container {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+.hand-container span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #88d8b0;
+    font-size: 7rem;
+    -webkit-transition: opacity 600ms ease-in-out;
+    transition: opacity 600ms ease-in-out;
+}
+  
+.hand-container span.transparent {
+    opacity: 0;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #ffcc5c;
+    min-height: 150px;
+}
